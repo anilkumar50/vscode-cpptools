@@ -1,0 +1,23 @@
+#include<iostream>
+ using namespace std;
+ class A{
+     private:
+        static int X;
+     public:
+        void display_X(){
+                    cout<<"x="<<endl;
+        }
+        void change_x(){
+                   x=5;
+                   }
+};
+int A::x=2;
+int main(){
+          A a1,a2;
+          a1.display_x();
+          a2.display_X();
+          a1.change_X();
+          a1.display_x();
+          a2.display_x();
+          return 0;
+}
